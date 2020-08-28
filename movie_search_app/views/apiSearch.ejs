@@ -1,0 +1,10 @@
+<h1>
+	Your searches..
+</h1>
+<ul>
+<%data["Search"].forEach(function(loop){%>
+	<li><strong><%= loop["Title"] %></strong> - <%= loop["Year"] %></li>
+<%});%>	
+</ul>
+
+<a href="/">Search Again</a>
